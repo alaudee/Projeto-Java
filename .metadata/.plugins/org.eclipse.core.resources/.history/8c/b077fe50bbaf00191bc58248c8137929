@@ -1,0 +1,16 @@
+package registroPessoal;
+
+import javax.swing.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		PessoaBean pessoa = new PessoaBean();
+		
+		pessoa.setNome(JOptionPane.showInputDialog(null, "Dgite seu nome:"));
+		
+		System.out.println(pessoa.getNome());
+	}
+
+}

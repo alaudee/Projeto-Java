@@ -1,0 +1,18 @@
+package registroPessoal;
+
+import javax.swing.*;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		PessoaBean pessoa = new PessoaBean();
+		
+		pessoa.setNome(JOptionPane.showInputDialog(null, "Dgite seu nome:"));
+		
+		pessoa.setIdade(Integer.parseInt(JOptionPane.showInputDialog(null, "Digite sua idade:")));
+		
+		System.out.println(pessoa.getIdade());
+	}
+
+}

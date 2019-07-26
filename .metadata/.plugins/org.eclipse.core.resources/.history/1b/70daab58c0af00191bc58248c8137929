@@ -1,0 +1,29 @@
+package registroPessoal;
+
+public class PessoaDAO {
+	
+	public void revisaIdade(int idade) {
+		
+		if(idade < 18) {
+			System.out.println("Você é menor de idade");
+			System.exit(0);
+		}else {
+			System.out.println("Pode continuar");
+		}
+	}
+	
+	
+	public void revisaCidade (String cidade) {
+		
+		String [] sigla = {"SP", "RJ", "MT", "BA", "AM"};
+		
+		for(int x = 0; x < sigla.length; x++) {
+			
+			if (cidade != sigla[x]) {
+				
+				System.out.println("Essa sigla não existe");
+				System.exit(0);
+			}
+		}
+	}
+}
